@@ -1,4 +1,4 @@
-package org.example.solved;
+package org.example;
 
 public class SmallTasks {
     public static void compareStrings(){

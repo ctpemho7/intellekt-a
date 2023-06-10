@@ -1,4 +1,4 @@
-package org.example.solved.sort;
+package org.example.sort;
 
 public class BubbleSortSales {
 
