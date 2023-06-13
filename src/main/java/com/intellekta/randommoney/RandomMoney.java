@@ -1,4 +1,4 @@
-package org.example.randommoney;
+package com.intellekta.randommoney;
 
 import java.util.Random;
 
