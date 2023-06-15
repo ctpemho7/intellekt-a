@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GOGOOLE</title>
+
+    <style>
+      html, body{
+      height:100%;
+    }
+
+    iframe {
+      width:100%;
+      height:80%;
+    }
+
+    </style>
+</head>
+
+<body>
+<h1>GOGOOLE</h1>
+<h3>Новый поисковик!</h3>
+
+<div>
+    <input type="text" id="queryInput" placeholder="Введите запрос">
+    <button onclick="openGoogle()">Поиск</button>
+</div>
+
+<iframe id="googleFrame" src=""></iframe>
+
+<script>
+        function openGoogle() {
+            // обращаемся к DOM дереву
+            var query = document.getElementById("queryInput").value;
+            var googleFrame = document.getElementById("googleFrame");
+
+            if (query !== "") {
+
+                googleFrame.src = "https://www.google.com/search?q=" + query;
+            } else {
+                googleFrame.src = "https://www.google.com";
+            }
+        }
+
+</script>
+</body>
+
+</html>

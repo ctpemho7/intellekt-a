@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+</head>
+<body>
+<script>
+        function greetUser() {
+            var userName = prompt("Введите ваше имя:");
+            if (userName !== null) {
+                var confirmed = confirm("Верно ли вы ввели имя: " + userName + "?");
+                if (confirmed) {
+                    alert("Добро пожаловать, " + userName + "!");
+                } else {
+                    greetUser();
+                }
+            }
+        }
+
+        window.onload = greetUser;
+    </script>
+</body>
+</html>
